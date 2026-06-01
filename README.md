@@ -18,6 +18,11 @@ The Editframe code in this repo is the source for the videos shown in the presen
 - `presentations/Centaur-Public-Demo.pptx`
 - `presentations/Personal-AI-Stack-White-Label.pptx`
 
+## YouTube thumbnails
+
+- `public/assets/thumbnails/centaur-youtube-thumbnail.png`
+- `public/assets/thumbnails/personal-ai-stack-youtube-thumbnail.png`
+
 ## Run locally
 
 ```bash
