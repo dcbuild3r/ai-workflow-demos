@@ -1,6 +1,12 @@
 # AI Workflow Demos
 
+Presentation posts:
+
+- [Centaur white-label demo](https://x.com/dcbuilder/status/2059651046830490024?s=20)
+- [Personal AI stack white-label demo](https://x.com/dcbuilder/status/2059663573874356536)
+
 Editframe/Next.js source and PowerPoint decks for two white-label AI workflow demos.
+The Editframe code in this repo is the source for the videos shown in the presentation posts above.
 
 ## Demos
 
