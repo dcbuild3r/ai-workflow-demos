@@ -1,0 +1,19 @@
+.DS_Store
+.claude/
+.next/
+node_modules/
+outputs/
+*.tsbuildinfo
+
+# Local presentation render/QA scratch.
+presentations/qa/
+presentations/assets/
+presentations/*.key
+presentations/Centaur-for-WF.pptx
+presentations/Personal-AI-Stack.pptx
+
+# Duplicate local source-asset cache.
+src/assets/
+
+# Bad scrape artifact; the used Runner logo is si-runner_now.png.
+public/assets/logos/si-runner.png
