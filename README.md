@@ -94,44 +94,29 @@ Useful docs:
 - [Editframe docs](https://www.editframe.com/docs)
 - [Editframe rendering](https://www.editframe.com/docs/rendering)
 
-## Agent skills for Codex and Claude Code
+## Editframe agent skills
 
-Skills are reusable instructions, scripts, and reference files that tell a coding agent how to do a recurring workflow. They are especially useful for things like video composition rules, release checklists, rendering commands, QA passes, or house style.
+Install the official Editframe agent skills before asking Codex, Claude Code, Cursor, OpenCode, or Windsurf to make larger video edits:
 
-For Codex, skills can live in:
-
-- `.agents/skills/` inside this repo for project-specific workflows.
-- `~/.agents/skills/` for personal skills available across repos.
-- `/etc/codex/skills/` for machine-wide/admin skills.
-
-For Claude Code, skills can live in:
-
-- `.claude/skills/` inside this repo for project-specific workflows.
-- `~/.claude/skills/` for personal skills available across repos.
-- Plugin skill folders when installed through a Claude Code plugin.
-
-A skill is usually a folder with a `SKILL.md` file:
-
-```text
-.agents/skills/editframe-composition/
-  SKILL.md
-  references/
-  scripts/
+```bash
+npx skills add editframe/skills
 ```
 
-`SKILL.md` should include frontmatter with a clear `name` and `description`, then concise instructions. Keep big docs in `references/` and helper commands in `scripts/` so the agent can load only what it needs.
+Editframe's create command also installs these skills automatically when scaffolding a fresh project:
 
-Places to get or build skills:
+```bash
+npm create @editframe@latest
+```
 
-- Codex built-ins and curated installs through `$skill-creator` and `$skill-installer`.
-- Claude Code bundled skills and project/personal skills.
-- Official/plugin skill packages from the agent vendor.
-- Your own repo-scoped skills in `.agents/skills/` or `.claude/skills/`.
+The Editframe docs list these installed skills:
+
+- `editframe-composition` - HTML web components and React for building video compositions.
+- `editframe-motion-design` - animation and motion design principles for video.
 
 Useful docs:
 
-- [Codex Agent Skills](https://developers.openai.com/codex/skills)
-- [Claude Code Skills](https://code.claude.com/docs/en/skills)
+- [Editframe Agent Skills](https://editframe.com/skills/editframe-create/agent-skills)
+- [Editframe docs](https://editframe.com/docs)
 
 ## Notes
 
